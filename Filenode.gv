@@ -1,0 +1,36 @@
+digraph inode_graph{
+	rankdir=LR
+	node [shape=oval];
+	q-1 -> q0;
+	q0 [ label = "File path: INtest/\n
+		File size: 140734343614448\n
+		Blocks allocated: 140734343614512\n
+		I-node number: 140734343614448\n
+		Number of links: 0\n
+"	]
+
+	q1 -> q2;
+	q2 [ label = "File path: INtest/\n
+		File size: 140734343614448\n
+		Blocks allocated: 140734343614512\n
+		I-node number: 140734343614448\n
+		Number of links: 0\n
+"	]
+
+	q0 -> q1;
+	q1 [ label = "File path: INtest//HelloWorld\n
+		File size: 0\n
+		Blocks allocated: -412187686338560\n
+		I-node number: 140302409117456\n
+		Number of links: 140302409699392\n
+"	]
+
+	q-1 -> q0;
+	q0 [ label = "File path: INtest//HelloWorld/not_empty\n
+		File size: 140302409667792\n
+		Blocks allocated: -8\n
+		I-node number: 1682465695\n
+		Number of links: 403999992\n
+"	]
+
+}
